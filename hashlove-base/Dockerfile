@@ -1,4 +1,4 @@
-FROM ruby:2.6.0
+FROM ruby:2.6.2
 LABEL maintainer "tanukiti1987 <tanukiti1987@gmail.com>"
 
 # シェルスクリプトとしてbashを利用
