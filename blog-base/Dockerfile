@@ -1,7 +1,7 @@
-FROM ruby:2.4-alpine
+FROM ruby:2.7-alpine
 
 RUN	mkdir -p /aws && \
-	apk -Uuv add groff less python py-pip && \
+	apk -Uuv add groff less python py-pip git openssh && \
 	pip install awscli && \
 	apk --purge -v del py-pip && \
 	rm /var/cache/apk/*
