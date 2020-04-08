@@ -1,4 +1,4 @@
-FROM ruby:2.7-alpine
+FROM ruby:2.7.1-alpine
 
 RUN	mkdir -p /aws && \
 	apk -Uuv add groff less python py-pip git openssh && \
